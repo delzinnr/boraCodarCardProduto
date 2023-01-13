@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #d9cdf7;
+
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #271a45;
+}
+
+span,
+button,
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+
+  padding-right: 1.5rem;
+}
+
+.col-1 {
+  position: relative;
+}
+
+.col-1 #image {
+  width: 28.0625rem;
+  height: 15.8125rem;
+}
+
+.col-1 button {
+  position: absolute;
+  right: 40px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.col-1 button {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.col-1 button.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.col-2 span {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #271a45;
+}
+
+.col-2 p {
+  margin-bottom: 1.25rem;
+  color: #271a45;
+  font-size: 1.5rem;
+}
+
+.col-2 button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #271a45;
+
+  background: transparent;
+
+  border: 1px solid #271a45;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.col-2 button:hover {
+  background: #271a45;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 120%;
+  }
+  body {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 794px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  body {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 62%;
+  }
+}

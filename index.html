@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Desafio 2 - Card Produto</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="col-1">
+        <img
+          id="image"
+          src="./assets/product.png"
+          alt="Imagem de um Sofá Margot 2 - Rosé"
+        />
+        <button
+          id="button"
+          onclick="active3DModel()"
+          class="active"
+          title="botão para abrir visualização 3D"
+        >
+          <img
+            src="./assets/360.svg"
+            alt="botão para abrir visualização 3D"
+            title="botão para abrir visualização 3D"
+          />
+        </button>
+        <button
+          onclick="close3DModel()"
+          id="close-button"
+          class=""
+          title="botão para fechar visualização 3D"
+        >
+          <img
+            src="./assets/close.svg"
+            alt="botão para fechar visualização 3D"
+            title="botão para fechar visualização 3D"
+          />
+        </button>
+      </div>
+      <div class="col-2">
+        <span>Código: 42404</span>
+        <h1>Sofá Margot II - Rosé</h1>
+        <p>R$ 4.000</p>
+        <button>Adicionar à cesta</button>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
